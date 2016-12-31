@@ -451,7 +451,6 @@ namespace libtorrent
 	void session_handle::get_cache_info(cache_status* ret
 		, torrent_handle h, int flags) const
 	{
-		auto retp = &ret;
 		sync_call(&session_impl::get_cache_info, h, ret, flags);
 	}
 
